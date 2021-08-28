@@ -59,22 +59,23 @@ function parse(str) {
   var n = parseFloat(match[1]);
   var type = (match[2] || 'ms').toLowerCase();
   switch (type) {
-    case 'years':
-    case 'year':
-    case 'yrs':
-    case 'yr':
-    case 'y':
+    case 'années':
+    case 'année':
+    case 'ans':
+    case 'an':
       return n * y;
-    case 'weeks':
-    case 'week':
-    case 'w':
+    case 'semaines':
+    case 'semaine':
+    case 'sem':
       return n * w;
-    case 'days':
-    case 'day':
-    case 'd':
+    case 'journées':
+    case 'journée':
+    case 'jours':
+    case 'jour':
+    case 'j':
       return n * d;
-    case 'hours':
-    case 'hour':
+    case 'heures':
+    case 'heure':
     case 'hrs':
     case 'hr':
     case 'h':
@@ -85,14 +86,14 @@ function parse(str) {
     case 'min':
     case 'm':
       return n * m;
-    case 'seconds':
-    case 'second':
+    case 'secondes':
+    case 'seconde':
     case 'secs':
     case 'sec':
     case 's':
       return n * s;
-    case 'milliseconds':
-    case 'millisecond':
+    case 'millisecondes':
+    case 'milliseconde':
     case 'msecs':
     case 'msec':
     case 'ms':
